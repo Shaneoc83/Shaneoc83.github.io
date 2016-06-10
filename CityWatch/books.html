@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>City Watch - Books</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>City Watch - Books</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- optional -->
-    
-    <style type="text/css">
-      html {
-          position: relative;
-          min-height: 100%;
-      }
-      body {
-          /* Margin bottom by footer height */
-          margin-bottom: 60px;
-          margin-top: 0px;
-          
-      }
-      .footer {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          /* Set the fixed height of the footer here */
-          height: 60px;
-          color:black;
-         
-      }
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- optional -->
 
-      .container{
-        float: center;
-      }
-
-      .navbar .navbar-nav {
-          display: inline-block;
-          float: center;
-          width: 100%
-          vertical-align: top;
-          margin: 0px; 
-          position: relative;
-          left: 175px;
-      }
-
-      .navbar-fixed-bottom {
-          padding-left: 30%;
-          
-          
-      }
+  <style type="text/css">
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
       
-  body{
-        background-color: #FAF3DD
-      }
-  /*this page only styles below*/
-* {
-  margin: 0; 
-  padding: 0;
-}
-body {
-  background: #FAF3DD; 
-  font-family: arial, verdana, tahoma;
-}
+      margin-bottom: 60px;
+      margin-top: 0px;
 
-/*Time to apply widths for accordian to work
-Width of image = 640px
-total images = 5
-so width of hovered image = 640px
-width of un-hovered image = 40px - you can set this to anything
-so total container width = 640 + 40*4 = 800px;
-default width = 800/5 = 160px;
-*/
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      
+      height: 60px;
+      color:black;
+
+    }
+
+    .container{
+      float: center;
+    }
+
+    .navbar .navbar-nav {
+      display: inline-block;
+      float: center;
+      width: 100%
+      vertical-align: top;
+      margin: 0px; 
+      position: relative;
+      left: 175px;
+    }
+
+    .navbar-fixed-bottom {
+      padding-left: 30%;
+
+
+    }
+
+    body{
+      background-color: #FAF3DD
+    }
+    /*this page only styles below*/
+    * {
+      margin: 0; 
+      padding: 0;
+    }
+    body {
+      background: #FAF3DD; 
+      font-family: arial, verdana, tahoma;
+    }
+
+
 
 .accordian {
   width: 900px; height: 780px;
   overflow: hidden;
   
-  /*Time for some styling*/
+  
   margin: 100px auto;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
 }
 
-/*A small hack to prevent flickering on some browsers*/
+
 .accordian ul {
   width: 2000px;
-  /*This will give ample space to the last item to move
-  instead of falling down/flickering during hovers.*/
+  
 }
 
 .accordian li {
@@ -106,13 +98,12 @@ default width = 800/5 = 160px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  /*If you hover on the images now you should be able to 
-  see the basic accordian*/
+  
 }
 
-/*Reduce with of un-hovered elements*/
+
 .accordian ul:hover li {width: 40px;}
-/*Lets apply hover effects now*/
+
 /*The LI hover style should override the UL hover style*/
 .accordian ul li:hover {width: 640px;}
 
@@ -126,7 +117,7 @@ default width = 800/5 = 160px;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 0; bottom: 0; 
-width: 690px; 
+  width: 690px; 
 
 }
 .image_title a {
@@ -136,99 +127,98 @@ width: 690px;
   padding: 20px;
   font-size: 16px;
 }
-  </style>
+</style>
 
 </head>
 <body>
 
-    <!-- @begin WORKING AREA -->
-     <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">          
-          <a class="navbar-brand" href="index.html">City Watch</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="books.html">Books</a></li>
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="author.html">Author</a></li>
-          </ul>
-          
-        </div><!--/.nav-collapse -->
+  <!-- @begin WORKING AREA -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">          
+        <a class="navbar-brand" href="index.html">City Watch</a>
       </div>
-    </nav><!--Nav bar ends-->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="books.html">Books</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="author.html">Author</a></li>
+        </ul>
+
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav><!--Nav bar ends-->
 
 
-<!-- Main Content -->
-<!--All work below here-->
+  <!-- Main Content -->
+  <!--All work below here-->
   
-<div class="accordian">
-  <ul>
-    <li>
-      <div class="image_title">
-        <a href="http://wiki.lspace.org/mediawiki/Book:Guards!_Guards!">Guards! Guards!</a>
-      </div>
-      <a href="http://wiki.lspace.org/mediawiki/Book:Guards!_Guards!">
-        <img src="http://www.lspace.org/ftp/images/bookcovers/uk/guards-guards-1.jpg"/>
-      </a>
-    </li>
-    <li>
-      <div class="image_title">
-        <a href="http://wiki.lspace.org/mediawiki/Book:Men_at_Arms">Men at Arms</a>
-      </div>
-      <a href="http://wiki.lspace.org/mediawiki/Book:Men_at_Arms">
-        <img src="http://www.lspace.org/ftp/images/bookcovers/uk/men-at-arms-2.jpg"/>
-      </a>
-    </li>
-    <li>
-      <div class="image_title">
-        <a href="http://wiki.lspace.org/mediawiki/Book:Feet_of_Clay">Feet of Clay</a>
-      </div>
-      <a href="http://wiki.lspace.org/mediawiki/Book:Feet_of_Clay">
-        <img src="http://www.lspace.org/ftp/images/bookcovers/uk/feet-of-clay-2.jpg"/>
-      </a>
-    </li>
-    <li>
-      <div class="image_title">
-        <a href="http://wiki.lspace.org/mediawiki/Book:Jingo">Jingo</a>
-      </div>
-      <a href="http://wiki.lspace.org/mediawiki/Book:Jingo">
-        <img src="http://www.lspace.org/ftp/images/bookcovers/uk/jingo-2.jpg"/>
-      </a>
-    </li>
-    <li>
-      <div class="image_title">
-        <a href="http://wiki.lspace.org/mediawiki/Book:The_Fifth_Elephant">The Fifth Elephant</a>
-      </div>
-      <a href="http://wiki.lspace.org/mediawiki/Book:The_Fifth_Elephant">
-        <img src="http://www.lspace.org/ftp/images/bookcovers/uk/the-fifth-elephant-1.jpg"/>
-      </a>
-    </li>
-  </ul>
-</div>
+  <div class="accordian">
+    <ul>
+      <li>
+        <div class="image_title">
+          <a href="http://wiki.lspace.org/mediawiki/Book:Guards!_Guards!">Guards! Guards!</a>
+        </div>
+        <a href="http://wiki.lspace.org/mediawiki/Book:Guards!_Guards!">
+          <img src="http://www.lspace.org/ftp/images/bookcovers/uk/guards-guards-1.jpg"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="http://wiki.lspace.org/mediawiki/Book:Men_at_Arms">Men at Arms</a>
+        </div>
+        <a href="http://wiki.lspace.org/mediawiki/Book:Men_at_Arms">
+          <img src="http://www.lspace.org/ftp/images/bookcovers/uk/men-at-arms-2.jpg"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="http://wiki.lspace.org/mediawiki/Book:Feet_of_Clay">Feet of Clay</a>
+        </div>
+        <a href="http://wiki.lspace.org/mediawiki/Book:Feet_of_Clay">
+          <img src="http://www.lspace.org/ftp/images/bookcovers/uk/feet-of-clay-2.jpg"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="http://wiki.lspace.org/mediawiki/Book:Jingo">Jingo</a>
+        </div>
+        <a href="http://wiki.lspace.org/mediawiki/Book:Jingo">
+          <img src="http://www.lspace.org/ftp/images/bookcovers/uk/jingo-2.jpg"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="http://wiki.lspace.org/mediawiki/Book:The_Fifth_Elephant">The Fifth Elephant</a>
+        </div>
+        <a href="http://wiki.lspace.org/mediawiki/Book:The_Fifth_Elephant">
+          <img src="http://www.lspace.org/ftp/images/bookcovers/uk/the-fifth-elephant-1.jpg"/>
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
 
 
-<!--all work above here-->
-<!--Footer section -->
-<footer class="footer ">
-  <div class="container pull-right">
-    <ul class="row nav navbar navbar-nav navbar-fixed-bottom ">
+  <!--all work above here-->
+  <!--Footer section -->
+  <footer class="footer ">
+    <div class="container pull-right">
+      <ul class="row nav navbar navbar-nav navbar-fixed-bottom ">
 
         <li><a href="index.html">Home</a></li>
         <li><a href="books.html">Books</a></li>
         <li><a href="characters.html">Characters</a></li>
         <li><a href="author.html">Author</a></li>
 
-    </ul>
-</div>
-</footer>
+      </ul>
+    </div>
+  </footer>
 
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-<script   src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"   integrity="sha256-0vBSIAi/8FxkNOSKyPEfdGQzFDak1dlqFKBYqBp1yC4="   crossorigin="anonymous"></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </body>
 </html>
