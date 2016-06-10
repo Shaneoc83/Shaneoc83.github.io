@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Watch - Home</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- optional -->
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <style type="text/css">
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
+
+      margin-bottom: 60px;
+      margin-top: 0px;
+
+    }
+
+
+  }
+
+  .container{
+    float: center;
+  }
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: center;
+    width: 100%
+    vertical-align: top;
+    margin: 0px; 
+    position: relative;
+    left: 175px;
+
+  }
+
+
+
+  body{background-color: #FAF3DD}
+  /*css for this page only below here*/
+  body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+  }
+  header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+
+  }
+  p{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .head{
+    text-align: center;
+    position: relative;
+
+
+  }
+
+  .headerobjectswrapper{
+  }
+
+  .subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+  }
+  .weatherforcastbox{
+    position: relative;
+    width: 12%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
+  }
+  .content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+  }
+  .columns{
+
+  }
+
+  .column{
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+  }
+  .column + .column { 
+    border-left: 1px solid #2f2f2f;
+  }
+  .column .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+  }
+  .column .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+  }
+
+  .column .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+
+  .column .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+  }
+  .column .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .column .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+  }
+  .column .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .column .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+  }
+  .column .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+  }
+  .column .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+  }
+  .column .citation{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    /*font-style: italic;*/
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+  }
+  .column .citation:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  .column .citation:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  .column .figure {
+    margin: 0 0 20px;
+  }
+  .column .figcaption{
+    font-style: italic;
+    font-size: 12px;
+  }
+  .media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+  }
+  /*________________________________________________________________________________________________________________________________*/
+  /*MEDIAQUERIES*/
+  @media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+      display: none;
+    }
+
+  }
+  @media only all and (max-width: 1200px) {
+    .column{
+      width: 31%;
+    }
+
+  }
+  @media only all and (max-width: 900px) {
+    .column{
+      width: 47%;
+    }
+
+  }
+  @media only all and (max-width: 600px) {
+    .column{
+      width: 100%;
+    }
+    .column + .column {
+      border-left: none;
+      border-bottom: 1px solid #2f2f2f;
+    }
+    header{
+      max-width: 320px;
+      font-size: 60px;
+      line-height: 54px;
+      overflow: hidden;
+    }
+
+  }
+
+</style>
+
+</head>
+<body>
+
+  <!-- @begin WORKING AREA -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">          
+        <a class="navbar-brand" href="index.html">City Watch</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="author.html">Author</a></li>
+        </ul>
+
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav><!--Nav bar ends-->
+
+
+  <!-- Main Content -->
+  <!--All work below here-->
+  <body>
+    <div class="head">
+      <div class="headerobjectswrapper">
+        
+        <header>Ankh-Morpork Times</header>
+      </div>
+
+      
+    </div>
+    <div class="content">
+      <div class="columns">
+        <div class="column">
+          <div class="head"><span class="headline hl3">Headless body in topless bar</span><p></p></div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequuntur necessitatibus quas voluptate ipsa iste cumque dicta totam deserunt repellat. Tenetur inventore, doloribus hic nesciunt nobis repudiandae non mollitia molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam libero aliquid facere velit cum laudantium repudiandae neque sunt, aliquam, necessitatibus tempore hic a. Nemo voluptate, minima pariatur quasi quisquam!
+          <figure class="figure">
+              <img class="media" src="img/gimlet.jpg" alt="">
+
+            </figure>
+          </p></div>
+          <div class="column">
+            <div class="head"><span class="headline hl5">Citizens don't care as apathy rises</span><p><span class="headline hl6">The crowd seemed to grow</span></p></div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore saepe, aliquam ullam quasi odio ducimus debitis perferendis, quisquam velit rerum reprehenderit tenetur sunt repellat totam voluptatibus optio delectus dolor voluptate.
+            </p>
+            
+
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, animi ducimus facilis aperiam, rerum ipsum commodi corrupti, distinctio assumenda sapiente qui atque odit consequuntur. Vitae ea, adipisci accusantium ratione nulla.</span><span>Veniam nesciunt eaque sunt aliquam repellendus perspiciatis explicabo distinctio perferendis ad fugiat numquam voluptatem, obcaecati laborum dolores maiores, qui quas. Autem provident odit harum molestias porro. Rerum deleniti esse possimus.</span> </p>
+
+            
+
+          </div>
+          <div class="column"><div class="head"><span class="headline hl1">Tipsy Train</span><p><span class="headline hl2">Cabbage wine, not fine</span></p></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi sint officiis praesentium omnis labore eligendi repellat nulla totam voluptates ipsam, adipisci ex esse qui porro necessitatibus, aliquid deleniti mollitia.</p>
+          <figure class="figure">
+            <img class="media" src="img/dibbler.jpg" alt="">
+
+          </figure>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo dignissimos aliquid ratione et mollitia cupiditate odit praesentium, nulla cumque perspiciatis fugit, aperiam autem vitae vel unde fuga eius laboriosam. </div>
+          <div class="column"><div class="head"><span class="headline hl3">City <del>litaressy</del> reading levels at all time low </span><p><span class="headline hl4">A thousand unknown words</span></p></div><p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum soluta officia, neque, porro molestias veniam nesciunt incidunt! Maxime ea accusantium blanditiis recusandae, quod autem accusamus enim itaque assumenda! Autem, ea?</span>
+          <span>Doloribus quidem nesciunt magnam tempore libero laboriosam, aliquid ipsum placeat provident odio facere, maxime vero recusandae tenetur ab. Iste, maxime deleniti quaerat atque ad sint! Tempore repudiandae illo blanditiis molestias.</span>
+          <span>Fuga, nostrum minus recusandae a pariatur consequatur soluta minima velit accusantium labore doloribus dolores alias tempore sequi cupiditate nisi. Rerum consequatur voluptas quis libero magni dolorem, consequuntur asperiores quam fugiat.</span></p>
+          <figure class="figure">
+            <img class="media" src="img/bs.jpg" alt="">
+            
+          </figure>
+          </div>
+          <div class="column"><div class="head"><span class="headline hl1">Dwarf sues barman over sizeist remarks </span></div><p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ipsum incidunt consequatur pariatur illum quo accusamus. Tempora at commodi delectus modi obcaecati quam, molestiae molestias mollitia magni voluptatem vitae corporis.</span>
+          <span>Non molestiae ducimus iste, mollitia dicta amet minus ipsa facilis labore tenetur laudantium aliquam natus, cupiditate ea soluta repellat quod corrupti doloribus minima, asperiores fugit. Delectus alias repudiandae aut sunt?</span>
+          <span>Inventore voluptas dolore culpa veritatis ex aliquam suscipit voluptatibus possimus assumenda asperiores distinctio ducimus, ab tenetur officia esse officiis impedit. Aspernatur dolores dignissimos fuga, repellat. Quaerat minus aut possimus eum!</span> </p>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--all work above here-->
+      <!--Footer section -->
+      <footer class="footer ">
+        <div >
+          <ul class="row nav navbar navbar-nav  ">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="author.html">Author</a></li>
+
+          </ul>
+        </div>
+      </footer>
+
+
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+      <script   src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"   integrity="sha256-0vBSIAi/8FxkNOSKyPEfdGQzFDak1dlqFKBYqBp1yC4="   crossorigin="anonymous"></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    </body>
+    </html>
