@@ -1,0 +1,56 @@
+<style type="text/css">
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
+      /* Margin bottom by footer height */
+      margin-bottom: 60px;
+      margin-top: 0px;
+
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+      color:black;
+
+    }
+
+    .container{
+      float: center;
+    }
+
+    .navbar .navbar-nav {
+      display: inline-block;
+      float: center;
+      width: 100%
+      vertical-align: top;
+      margin: 0px; 
+      position: relative;
+      left: 175px;
+    }
+
+    .navbar-fixed-bottom {
+      padding-left: 30%;
+
+
+    }
+    .carousel{
+      height: 900px;
+      width: 700px;
+    }
+
+    .carousel-inner>.item>img, .img-responsive{
+      height: 900px;
+      width: 700px;
+    }
+
+    body{
+      background-color: #FAF3DD
+    }
+
+
+  </style>
