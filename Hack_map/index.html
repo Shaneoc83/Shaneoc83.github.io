@@ -14,6 +14,11 @@
  arcgisUtils.createMap("c835b8164cc3462fa3132bd36217342d", "map1").then(function (response) {
  map = response.map;
  });
+
+ myLocation = new LocateButton({map: map}, "LocateButton");
+ myLocation.startup();
+ myLocation.scale = 150000;
+ myLocation.centerAt(true);
  });
  </script>
 
@@ -22,9 +27,15 @@
  padding: 0;
  margin: 0;
  height: 100%;
+}
+ #LocateButton {
+ position: absolute;
+ top: 100px;
+ left: 20px;
+ z-index: 10;
  }
  </style>
- 
+
  </head>
 
  <body>
