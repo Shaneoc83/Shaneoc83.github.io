@@ -10,7 +10,7 @@
 
 <script>
  var map;
- require(["esri/map", "esri/arcgis/utils", "dojo/domReady!"], function(Map,arcgisUtils) {
+ require(["esri/map", "esri/arcgis/utils",  "esri/dijit/LocateButton", "dojo/domReady!"], function(Map,arcgisUtils) {
  arcgisUtils.createMap("c835b8164cc3462fa3132bd36217342d", "map1").then(function (response) {
  map = response.map;
  });
@@ -39,9 +39,9 @@
  </head>
 
  <body>
- <div id="map1">
- <div id="LocateButton"></div>
- </div>
+ 	<div id="map1">
+ 		<div id="LocateButton"></div>
+ 	</div>
  </body>
 
 </html>
