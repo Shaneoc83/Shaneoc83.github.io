@@ -15,25 +15,16 @@
  map = response.map;
  });
 
- myLocation = new LocateButton({map: map}, "LocateButton");
- myLocation.startup();
- myLocation.scale = 150000;
- myLocation.centerAt(true);
- });
+ 
  </script>
 
 
  <style>html, body, #map1 {
- padding: 0;
- margin: 0;
- height: 100%;
+ padding: 50;
+ margin: 50;
+ height: 80%;
 }
- #LocateButton {
- position: absolute;
- top: 100px;
- left: 20px;
- z-index: 10;
- }
+ 
  </style>
 
  </head>
