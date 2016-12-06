@@ -11,3 +11,5 @@ It will be modified into a purpose other than that it has now.
 
 
 Working as 0930 6-12-16
+
+Live link at http://shaneoc83.github.io/AngularMaps/googleMaps.html
