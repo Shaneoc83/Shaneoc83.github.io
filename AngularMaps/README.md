@@ -8,3 +8,6 @@ Enter the latitude and longitude and a placename , click enter.
 The application will jump to those co-ordinates and when clicked upon will display the name you entered.
 I use it as a guessing game for now.
 It will be modified into a purpose other than that it has now.
+
+
+Working as 0930 6-12-16
