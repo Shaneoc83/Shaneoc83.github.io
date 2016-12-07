@@ -11,5 +11,6 @@ It will be modified into a purpose other than that it has now.
 
 
 Working as of 0930 6-12-16
+Failing as of 7-12-16(APi key again)
 
 Live link at http://shaneoc83.github.io/AngularMaps/googleMaps.html
